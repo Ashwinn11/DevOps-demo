@@ -1,7 +1,7 @@
 pipeline {
   agent {
     docker {
-      docker run -v /var/run/docker.sock:/var/run/docker.sock ashwiin11/devops-demo:v1 // mount Docker socket to access the host's Docker daemon
+      docker run -v /var/run/docker.sock:/var/run/docker.sock ashwiin11/devops-demo:v1 // to mount Docker socket to access the host's Docker daemon
     }
   }
   stages {
